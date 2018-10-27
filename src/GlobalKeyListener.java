@@ -9,6 +9,7 @@ import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 
+import org.jnativehook.GlobalScreen;
 import org.jnativehook.keyboard.NativeKeyEvent;
 import org.jnativehook.keyboard.NativeKeyListener;
 
@@ -19,6 +20,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 	boolean shiftOn = false;
 	String key = null;
 	int keycode;
+	GlobalKeyListener globalKeyListener = this;
 	public GlobalKeyListener() throws AWTException {
 		robot = new Robot();
 		clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -29,6 +31,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 	}
 
 	public void nativeKeyReleased(NativeKeyEvent e) {
+
 		if (e.getKeyCode() == 60) {
 			
 			contents = clipboard.getContents(clipboard);
@@ -109,7 +112,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 							case '!': key = "VK_1";	shiftOn = true;keycode=49;		break;
 							case '@': key = "VK_2"; shiftOn = true;	keycode=50;	break;
 							case '+': key = "VK_-"; shiftOn = true;	keycode=61;	break;
-							
+							case '=': key = "VK_-"; shiftOn = false;	keycode=61;	break;
 							case '#': key = "VK_3"; shiftOn = true; keycode=51;		break;
 							case '$': key = "VK_4"; shiftOn = true;	keycode=52;	break;
 							case '%': key = "VK_5"; shiftOn = true;	keycode=53;	break;
@@ -124,6 +127,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 							case ']': key = "VK_OEM_6"; shiftOn = false;keycode=93;	break;
 							case '}': key = "VK_OEM_6"; shiftOn = true; keycode=93;		break;
 							case '|': key = "VK_OEM_102"; shiftOn = true; keycode=92;	break;
+							case '\\': key = "VK_OEM_102"; shiftOn = false; keycode=92;	break;
 							case ';': key = "VK_SEMICOLON"; shiftOn = false;break;
 							case ':': key = "VK_SEMICOLON"; shiftOn = true;keycode=59;	break;
 							case '"': key = "VK_OEM_7"; shiftOn = true; keycode=222;break;
@@ -134,7 +138,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 							case '/': key = "VK_SLASH"; shiftOn = false; keycode=47;  break;
 							case '?': key = "VK_SLASH"; shiftOn = true;	keycode=47; break;
 							
-							default: System.out.println("Keyboard: Invalid Value"); 	break;
+							default: System.out.println("Keyboard: Input or Err"); 	break;
 						}
 						if (shiftOn)
 						{
@@ -153,7 +157,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 						{
 							robot.keyRelease(KeyEvent.VK_SHIFT);		
 						}
-						
+						Thread.sleep(5);
 					}
 				
 				} catch (Exception e2) {
@@ -165,7 +169,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 			}
 
 		}
-/*		else if(e.getKeyCode()==61) {
+		/*else if(e.getKeyCode()==61) {
 			JFrame jFrame = new JFrame("sdf");
 			jFrame.addKeyListener(new KeyListener() {
 				
