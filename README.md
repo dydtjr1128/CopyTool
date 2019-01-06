@@ -1,7 +1,10 @@
 # CopyTool
 CopyTool
 
+## Discription
+* 클립보드에 저장된 문자열을 붙여넣기(CTRL + V)가 되지 않는 곳에서도 특수 키를 이용하여  붙여 넣을 수 있다. 
 
+</br>
 <p>
 1. 실행 화면</br>
 <img src="https://user-images.githubusercontent.com/19161231/47775137-39a4b900-dd32-11e8-9667-7445fca358e4.png">
