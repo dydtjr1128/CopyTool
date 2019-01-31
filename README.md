@@ -25,6 +25,7 @@ CopyTool
 <p>
 4. Type using the F2 key
 <img src="https://user-images.githubusercontent.com/19161231/47777158-77581080-dd37-11e8-9593-4ba86e7b55ac.gif">
+<img src="https://user-images.githubusercontent.com/19161231/52037775-50e28500-2573-11e9-98e4-2c11c534fed0.gif">
 </p>
 
 
