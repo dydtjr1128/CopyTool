@@ -31,6 +31,9 @@ CopyTool
 <img src="https://user-images.githubusercontent.com/19161231/52038082-6dcb8800-2574-11e9-8c25-2fc030c10d53.gif">
 </p>
 
+### TODO
+- [ ] Use GetKeyboardLayoutName, GetKeyboardLayout api by JNA,JNI
+
 
 
 </br> 
