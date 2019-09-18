@@ -16,11 +16,12 @@ public class CopyToolFrame extends JFrame {
 	class CopyToolPanel extends JPanel {
 		JButton startBtn, stopBtn;
 		GlobalKeyListener globalKeyListener;
-
+		KeyTypingThread keyTypingThread;
 		public CopyToolPanel() {
 			setLayout(new GridLayout(1, 2));
 			try {
 				globalKeyListener = new GlobalKeyListener();
+				keyTypingThread =  new KeyTypingThread();
 			} catch (AWTException e1) {
 				e1.printStackTrace();
 			}
@@ -39,6 +40,7 @@ public class CopyToolFrame extends JFrame {
 						// Don't forget to disable the parent handlers.
 						logger.setUseParentHandlers(false);
 						GlobalScreen.addNativeKeyListener(globalKeyListener);
+						keyTypingThread.start();
 					} catch (Exception ex) {
 						System.err.println("There was a problem registering the native hook.");
 						System.err.println(ex.getMessage());
