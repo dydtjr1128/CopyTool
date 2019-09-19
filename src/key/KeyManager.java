@@ -37,6 +37,7 @@ public class KeyManager {
 
         keyMap.put(' ', new KeyCode("VK_SPACE", false, 32));
         keyMap.put('\n', new KeyCode("VK_ENTER", false, KeyEvent.VK_ENTER));
+
         keyMap.put('a', new KeyCode("VK_A", false, 65));
         keyMap.put('b', new KeyCode("VK_B", false, 66));
         keyMap.put('c', new KeyCode("VK_C", false, 67));
@@ -63,6 +64,7 @@ public class KeyManager {
         keyMap.put('x', new KeyCode("VK_X", false, 88));
         keyMap.put('y', new KeyCode("VK_Y", false, 89));
         keyMap.put('z', new KeyCode("VK_Z", false, 90));
+
         keyMap.put('A', new KeyCode("VK_A", true, 65));
         keyMap.put('B', new KeyCode("VK_B", true, 66));
         keyMap.put('C', new KeyCode("VK_C", true, 67));
@@ -89,6 +91,41 @@ public class KeyManager {
         keyMap.put('X', new KeyCode("VK_X", true, 88));
         keyMap.put('Y', new KeyCode("VK_Y", true, 89));
         keyMap.put('Z', new KeyCode("VK_Z", true, 90));
+
+        keyMap.put('ㅁ', new KeyCode("VK_A", false, 65));
+        keyMap.put('ㅠ', new KeyCode("VK_B", false, 66));
+        keyMap.put('ㅊ', new KeyCode("VK_C", false, 67));
+        keyMap.put('ㅇ', new KeyCode("VK_D", false, 68));
+        keyMap.put('ㄷ', new KeyCode("VK_E", false, 69));
+        keyMap.put('ㄸ', new KeyCode("VK_E", true, 69));
+        keyMap.put('ㄹ', new KeyCode("VK_F", false, 70));
+        keyMap.put('ㅎ', new KeyCode("VK_G", false, 71));
+        keyMap.put('ㅗ', new KeyCode("VK_H", false, 72));
+        keyMap.put('ㅑ', new KeyCode("VK_I", false, 73));
+        keyMap.put('ㅓ', new KeyCode("VK_J", false, 74));
+        keyMap.put('ㅏ', new KeyCode("VK_K", false, 75));
+        keyMap.put('ㅣ', new KeyCode("VK_L", false, 76));
+        keyMap.put('ㅡ', new KeyCode("VK_M", false, 77));
+        keyMap.put('ㅜ', new KeyCode("VK_N", false, 78));
+        keyMap.put('ㅐ', new KeyCode("VK_O", false, 79));
+        keyMap.put('ㅒ', new KeyCode("VK_O", true, 79));
+        keyMap.put('ㅔ', new KeyCode("VK_P", false, 80));
+        keyMap.put('ㅖ', new KeyCode("VK_P", true, 80));
+        keyMap.put('ㅂ', new KeyCode("VK_Q", false, 81));
+        keyMap.put('ㅃ', new KeyCode("VK_Q", true, 81));
+        keyMap.put('ㄱ', new KeyCode("VK_R", false, 82));
+        keyMap.put('ㄲ', new KeyCode("VK_R", true, 82));
+        keyMap.put('ㄴ', new KeyCode("VK_S", false, 83));
+        keyMap.put('ㅅ', new KeyCode("VK_T", false, 84));
+        keyMap.put('ㅆ', new KeyCode("VK_T", true, 84));
+        keyMap.put('ㅕ', new KeyCode("VK_U", false, 85));
+        keyMap.put('ㅍ', new KeyCode("VK_V", false, 86));
+        keyMap.put('ㅈ', new KeyCode("VK_W", false, 87));
+        keyMap.put('ㅉ', new KeyCode("VK_W", true, 87));
+        keyMap.put('ㅌ', new KeyCode("VK_X", false, 88));
+        keyMap.put('ㅛ', new KeyCode("VK_Y", false, 89));
+        keyMap.put('ㅋ', new KeyCode("VK_Z", false, 90));
+
         keyMap.put('0', new KeyCode("VK_0", false, 48));
         keyMap.put('1', new KeyCode("VK_1", false, 49));
         keyMap.put('2', new KeyCode("VK_2", false, 50));

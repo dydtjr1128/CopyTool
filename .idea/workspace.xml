@@ -7,23 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06605e8c-1450-4a24-a397-7253040ac479" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KeyTypingThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/key/KeyCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/key/KeyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/language/Hangul.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CopyTool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CopyTool.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CopyToolFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CopyToolFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GlobalKeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GlobalKeyListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CopyToolFrame$CopyToolPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CopyToolFrame$CopyToolPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CopyToolFrame$CopyToolPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CopyToolFrame$CopyToolPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CopyToolFrame$CopyToolPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CopyToolFrame$CopyToolPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CopyToolFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CopyToolFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeyTypingThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyTypingThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/key/KeyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/key/KeyCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/key/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/key/KeyManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GlobalKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GlobalKeyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/KeyTypingThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KeyTypingThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/key/KeyCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/key/KeyCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/key/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/key/KeyManager.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +104,7 @@
       <workItem from="1548906518800" duration="1088000" />
       <workItem from="1549874081142" duration="640000" />
       <workItem from="1568783031588" duration="1621000" />
-      <workItem from="1568785427543" duration="9596000" />
+      <workItem from="1568785427543" duration="13873000" />
     </task>
     <task id="LOCAL-00001" summary="Build jar file">
       <created>1548911441201</created>

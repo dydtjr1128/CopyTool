@@ -11,6 +11,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class GlobalKeyListener implements NativeKeyListener {
     private Clipboard clipboard;
+    private boolean needStop = false;
 
     GlobalKeyListener() throws AWTException {
         clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -18,6 +19,10 @@ public class GlobalKeyListener implements NativeKeyListener {
 
     public void nativeKeyPressed(NativeKeyEvent e) {
         System.out.println("pre "+e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation() + e.paramString());
+        if(e.getKeyCode() == 62){
+            needStop = true;
+            KeyManager.getInstance().getBlockingQueue().clear();
+        }
     }
 
     public void nativeKeyReleased(NativeKeyEvent e) {
@@ -39,11 +44,11 @@ public class GlobalKeyListener implements NativeKeyListener {
             try {
                 String pasteString = (String) (contents.getTransferData(DataFlavor.stringFlavor));
                 BlockingQueue<Character> blockingQueue = KeyManager.getInstance().getBlockingQueue();
-                for (int i = 0; i < pasteString.length(); i++) {
-                    //System.out.println(pasteString.charAt(i) + " " + KeyEvent.getExtendedKeyCodeForChar(pasteString.charAt(i)) + " " + KeyEvent.getKeyText(pasteString.charAt(i)));
+                for (int i = 0; i < pasteString.length() && !needStop; i++) {
+                    //System.out.println(pasteString.charAt(i) + " " + KeyEvent.getExtendedKeyCodeForChar(pasteString.charAt(i)) + " @@ " + KeyEvent.getKeyText(pasteString.charAt(i)));
                     blockingQueue.put(pasteString.charAt(i));
                 }
-
+                needStop = false;
             } catch (Exception e2) {
                 System.out.println("err");
             }
