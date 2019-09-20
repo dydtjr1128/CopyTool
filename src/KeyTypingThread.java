@@ -1,20 +1,17 @@
 import key.KeyCode;
 import key.KeyManager;
 import language.Hangul;
-import org.jnativehook.keyboard.NativeKeyEvent;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
 import java.util.concurrent.BlockingQueue;
 
-import static java.lang.Thread.sleep;
-
 public class KeyTypingThread extends Thread {
     private BlockingQueue<Character> blockingQueue;
     private HashMap<Character, KeyCode> keyMap;
     private Robot robot;
-    private static final int SLEEP_TIME = 10;
+    private static final int SLEEP_TIME = 5;
 
     KeyTypingThread() throws AWTException {
         blockingQueue = KeyManager.getInstance().getBlockingQueue();

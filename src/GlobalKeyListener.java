@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
-import java.awt.event.KeyEvent;
 import java.util.concurrent.BlockingQueue;
 
 public class GlobalKeyListener implements NativeKeyListener {
@@ -18,25 +17,25 @@ public class GlobalKeyListener implements NativeKeyListener {
     }
 
     public void nativeKeyPressed(NativeKeyEvent e) {
-        System.out.println("pre "+e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation() + e.paramString());
-        if(e.getKeyCode() == 62){
+        //System.out.println("pre " + e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation() + e.paramString());
+        if (e.getKeyCode() == 62) {
             needStop = true;
             KeyManager.getInstance().getBlockingQueue().clear();
         }
     }
 
     public void nativeKeyReleased(NativeKeyEvent e) {
-        System.out.println("rel "+e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation() + e.paramString());
+        //System.out.println("rel " + e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation() + e.paramString());
         if (e.getKeyCode() == 60) {//f2
             runLogic();
         }
     }
 
     public void nativeKeyTyped(NativeKeyEvent e) {
-        System.out.println("typed " + e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation());
+        //System.out.println("typed " + e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation());
     }
 
-    public void runLogic(){
+    private void runLogic() {
         Transferable contents = clipboard.getContents(clipboard);
 
         if (contents != null) {
