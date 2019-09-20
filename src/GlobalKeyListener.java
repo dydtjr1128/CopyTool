@@ -42,6 +42,10 @@ public class GlobalKeyListener implements NativeKeyListener {
 
             try {
                 String pasteString = (String) (contents.getTransferData(DataFlavor.stringFlavor));
+
+                //programmers
+                pasteString = pasteString.replace("    ","").replace("\t","");
+
                 BlockingQueue<Character> blockingQueue = KeyManager.getInstance().getBlockingQueue();
                 for (int i = 0; i < pasteString.length() && !needStop; i++) {
                     //System.out.println(pasteString.charAt(i) + " " + KeyEvent.getExtendedKeyCodeForChar(pasteString.charAt(i)) + " @@ " + KeyEvent.getKeyText(pasteString.charAt(i)));

@@ -7,14 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06605e8c-1450-4a24-a397-7253040ac479" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CopyTool_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CopyTool_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/CopyTool_jar/CopyTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/CopyTool_jar/CopyTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GlobalKeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GlobalKeyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/KeyTypingThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyTypingThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/key/KeyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/key/KeyCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/language/Hangul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/language/Hangul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GlobalKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GlobalKeyListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/KeyTypingThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KeyTypingThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/key/KeyCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/key/KeyCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/language/Hangul.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/language/Hangul.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +60,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -103,6 +105,8 @@
       <workItem from="1549874081142" duration="640000" />
       <workItem from="1568783031588" duration="1621000" />
       <workItem from="1568785427543" duration="23734000" />
+      <workItem from="1568991130882" duration="124000" />
+      <workItem from="1568991912240" duration="2504000" />
     </task>
     <task id="LOCAL-00001" summary="Build jar file">
       <created>1548911441201</created>
@@ -125,6 +129,20 @@
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>

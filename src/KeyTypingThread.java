@@ -11,7 +11,7 @@ public class KeyTypingThread extends Thread {
     private BlockingQueue<Character> blockingQueue;
     private HashMap<Character, KeyCode> keyMap;
     private Robot robot;
-    private static final int SLEEP_TIME = 5;
+    private static final int SLEEP_TIME = 15;
 
     KeyTypingThread() throws AWTException {
         blockingQueue = KeyManager.getInstance().getBlockingQueue();
@@ -42,7 +42,7 @@ public class KeyTypingThread extends Thread {
             char character = 0;
             try {
                 character = blockingQueue.take();
-                System.out.println(character);
+                //System.out.println(character);
                 if (Hangul.isHangul(character)) {
                     for (char c : Hangul.split(character)) {
                         if (c == ' ')
