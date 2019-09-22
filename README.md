@@ -32,9 +32,7 @@ CopyTool
 </p>
 
 ### TODO
-- [ ] Use GetKeyboardLayoutName, GetKeyboardLayout api by JNA,JNI
-
-
+- [ ] Use GetKeyboardLayoutName, GetKeyboardLayout api by JNA,JNI for detecting language changes
 
 </br> 
 <a href="mailto:dydtjr1994@gmail.com" target="_blank">
