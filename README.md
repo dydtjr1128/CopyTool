@@ -34,6 +34,8 @@ CopyTool
 ### TODO
 - [ ] Use GetKeyboardLayoutName, GetKeyboardLayout api by JNA,JNI for detecting language changes
 
+The project was developed using Jnativehook.
+
 </br> 
 <a href="mailto:dydtjr1994@gmail.com" target="_blank">
   <img src="https://img.shields.io/badge/E--mail-Yongseok%20choi-yellow.svg">
