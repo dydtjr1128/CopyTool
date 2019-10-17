@@ -1,6 +1,6 @@
-import java.awt.*;
+import java.awt.AWTException;
 
-public class Main {//1234567890
+public class Main {
 	public static void main(String[] args) throws AWTException {
 		new CopyToolFrame();
 	}

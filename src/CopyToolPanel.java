@@ -3,16 +3,14 @@ import org.jnativehook.NativeHookException;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.function.Supplier;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class CopyToolPanel extends JPanel {
-    JButton startBtn, stopBtn;
-    GlobalKeyListener globalKeyListener;
-    KeyTypingThread keyTypingThread;
+    private JButton startBtn, stopBtn;
+    private GlobalKeyListener globalKeyListener;
+    private KeyTypingThread keyTypingThread;
 
     public CopyToolPanel(Supplier getIndentState) {
         setLayout(new GridLayout(1, 2));
