@@ -9,6 +9,7 @@ public class ToolBar extends JToolBar {
     public ToolBar(Consumer changeIndentState) {
         super("Copy Tool Menu");
         this.setBackground(Color.LIGHT_GRAY);
+        isDisableIndent.setBackground(Color.LIGHT_GRAY);
         isDisableIndent.setSelected(true);
         isDisableIndent.addItemListener(e -> {
             changeIndentState.accept(null);

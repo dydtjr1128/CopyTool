@@ -28,7 +28,7 @@ public class GlobalKeyListener implements NativeKeyListener {
     }
 
     public void nativeKeyReleased(NativeKeyEvent e) {
-        //System.out.println("rel " + e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation() + e.paramString());
+        System.out.println("rel " + e.getKeyChar() + " " + e.getKeyCode() + " " + e.getKeyLocation() + " " + e.getKeyLocation() + e.paramString());
         if (e.getKeyCode() == 60) {//f2
             runLogic();
         }
