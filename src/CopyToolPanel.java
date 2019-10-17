@@ -24,42 +24,34 @@ class CopyToolPanel extends JPanel {
         }
         startBtn = new JButton("Start");
         stopBtn = new JButton("Stop");
-        startBtn.addActionListener(new ActionListener() {
+        startBtn.addActionListener(e -> {
+            startBtn.setEnabled(false);
+            try {
+                GlobalScreen.registerNativeHook();
+                Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
+                logger.setLevel(Level.WARNING);
 
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                startBtn.setEnabled(false);
-                try {
-                    GlobalScreen.registerNativeHook();
-                    Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
-                    logger.setLevel(Level.WARNING);
-
-                    // Don't forget to disable the parent handlers.
-                    logger.setUseParentHandlers(false);
-                    GlobalScreen.addNativeKeyListener(globalKeyListener);
-                    keyTypingThread.start();
-                } catch (Exception ex) {
-                    System.err.println("There was a problem registering the native hook.");
-                    System.err.println(ex.getMessage());
-                    System.exit(1);
-                }
-
-            }
-        });
-        stopBtn.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                try {
-                    GlobalScreen.removeNativeKeyListener(globalKeyListener);
-                    GlobalScreen.unregisterNativeHook();
-                } catch (NativeHookException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                }
+                // Don't forget to disable the parent handlers.
+                logger.setUseParentHandlers(false);
+                GlobalScreen.addNativeKeyListener(globalKeyListener);
+                keyTypingThread.start();
+            } catch (Exception ex) {
+                System.err.println("There was a problem registering the native hook.");
+                System.err.println(ex.getMessage());
                 System.exit(1);
             }
+
+        });
+        stopBtn.addActionListener(e -> {
+
+            try {
+                GlobalScreen.removeNativeKeyListener(globalKeyListener);
+                GlobalScreen.unregisterNativeHook();
+            } catch (NativeHookException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+            System.exit(1);
         });
         add(startBtn);
         add(stopBtn);
