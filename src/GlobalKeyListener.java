@@ -7,14 +7,14 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.util.concurrent.BlockingQueue;
-import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class GlobalKeyListener implements NativeKeyListener {
     private Clipboard clipboard;
     private boolean needStop = false;
-    private Function<Void, Boolean> getIndentState;
+    private Supplier<Boolean> getIndentState;
 
-    GlobalKeyListener(Function<Void, Boolean> getIndentState) throws AWTException {
+    GlobalKeyListener(Supplier getIndentState) throws AWTException {
         this.getIndentState = getIndentState;
         clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
     }
@@ -47,7 +47,7 @@ public class GlobalKeyListener implements NativeKeyListener {
                 String pasteString = (String) (contents.getTransferData(DataFlavor.stringFlavor));
 
                 //programmers
-                boolean isDisableIndent = this.getIndentState.apply(null);
+                boolean isDisableIndent = this.getIndentState.get();
                 if(isDisableIndent) {
                     pasteString = pasteString.replace("    ", "").replace("\t", "");
                 }

@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.function.Function;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class WrappingPannel extends JPanel {
 
@@ -12,16 +13,8 @@ public class WrappingPannel extends JPanel {
         this.add(new CopyToolPanel(getIndentState), BorderLayout.CENTER);
     }
 
-    public Function<Void, Void> changeIndentState = this::changeDisableIndent;
-    public Function<Void, Boolean> getIndentState = this::getIsDisableIndent;
+    public Consumer<Void> changeIndentState = (a) -> { this.isDisableIndent = !this.isDisableIndent; };
+    public Supplier<Boolean> getIndentState = () -> this.isDisableIndent;
 
-    private Boolean getIsDisableIndent(Void f) {
-        return this.isDisableIndent;
-    }
-
-    private Void changeDisableIndent(Void f) {
-        System.out.println(this.isDisableIndent);
-        return null;
-    }
 
 }
