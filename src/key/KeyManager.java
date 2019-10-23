@@ -37,6 +37,7 @@ public class KeyManager {
 
         keyMap.put(' ', new KeyCode("VK_SPACE", false, 32));
         keyMap.put('\n', new KeyCode("VK_ENTER", false, KeyEvent.VK_ENTER));
+        keyMap.put('\t', new KeyCode("VK_TAB", false, KeyEvent.VK_TAB));
 
         keyMap.put('a', new KeyCode("VK_A", false, 65));
         keyMap.put('b', new KeyCode("VK_B", false, 66));

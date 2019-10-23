@@ -13,7 +13,8 @@ public class WrappingPannel extends JPanel {
         this.add(new CopyToolPanel(getIndentState), BorderLayout.CENTER);
     }
 
-    public Consumer<Void> changeIndentState = (a) -> { this.isDisableIndent = !this.isDisableIndent; };
+    public Consumer<Void> changeIndentState = (a) -> { this.isDisableIndent = !this.isDisableIndent;
+        System.out.println(this.isDisableIndent); };
     public Supplier<Boolean> getIndentState = () -> this.isDisableIndent;
 
 
