@@ -7,6 +7,7 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.util.concurrent.BlockingQueue;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class GlobalKeyListener implements NativeKeyListener {
@@ -48,8 +49,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 
                 //programmers
                 boolean isDisableIndent = this.getIndentState.get();
-                System.out.println("@@" + isDisableIndent);
-                if(isDisableIndent) {
+                if (isDisableIndent) {
                     pasteString = pasteString.replace("    ", "").replace("\t", "");
                 }
 

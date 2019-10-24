@@ -9,8 +9,13 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
 import java.util.concurrent.BlockingQueue;
+import java.util.function.Supplier;
 
 public class KeyTypingThread extends Thread {
+
+    public void setTimer() {
+        SLEEP_TIME = (Integer) getTimer.get();
+    }
 
     public interface User32jna extends User32 {
         User32jna INSTANCE = (User32jna) Native.load("user32.dll", User32jna.class);
@@ -22,9 +27,11 @@ public class KeyTypingThread extends Thread {
     private BlockingQueue<Character> blockingQueue;
     private HashMap<Character, KeyCode> keyMap;
     private Robot robot;
-    private static final int SLEEP_TIME = 15;
+    private int SLEEP_TIME = 15;
+    private Supplier getTimer;
 
-    KeyTypingThread() throws AWTException {
+    KeyTypingThread(Supplier getTimer) throws AWTException {
+        this.getTimer = getTimer;
         blockingQueue = KeyManager.getInstance().getBlockingQueue();
         keyMap = KeyManager.getInstance().getKeyMap();
         robot = new Robot();
@@ -59,6 +66,7 @@ public class KeyTypingThread extends Thread {
             char character = 0;
             try {
                 character = blockingQueue.take();
+                setTimer();
                 //System.out.println(character);
                 if (Hangul.isHangul(character)) {
                     if (isFirstRun) {

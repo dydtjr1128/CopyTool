@@ -3,6 +3,7 @@ import org.jnativehook.NativeHookException;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -12,11 +13,11 @@ class CopyToolPanel extends JPanel {
     private GlobalKeyListener globalKeyListener;
     private KeyTypingThread keyTypingThread;
 
-    public CopyToolPanel(Supplier getIndentState) {
+    public CopyToolPanel(Supplier getIndentState, Supplier getTimer) {
         setLayout(new GridLayout(1, 2));
         try {
             globalKeyListener = new GlobalKeyListener(getIndentState);
-            keyTypingThread =  new KeyTypingThread();
+            keyTypingThread =  new KeyTypingThread(getTimer);
         } catch (AWTException e1) {
             e1.printStackTrace();
         }
