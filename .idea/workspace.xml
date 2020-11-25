@@ -5,19 +5,17 @@
       <artifact name="CopyTool:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="06605e8c-1450-4a24-a397-7253040ac479" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CopyToolPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CopyToolPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GlobalKeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GlobalKeyListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeyTypingThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyTypingThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WrappingPannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WrappingPannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GlobalKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GlobalKeyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CopyTool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CopyTool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/KeyTypingThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KeyTypingThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/key/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/key/KeyManager.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,19 +48,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1QzowG8lRodPCyRk6BXxmswq5eg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548911452053" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -77,18 +80,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -104,6 +96,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -123,6 +116,7 @@
       <workItem from="1571293739118" duration="5628000" />
       <workItem from="1571810125422" duration="353000" />
       <workItem from="1571810757272" duration="11165000" />
+      <workItem from="1606298530028" duration="502000" />
     </task>
     <task id="LOCAL-00001" summary="Build jar file">
       <created>1548911441201</created>
@@ -142,16 +136,14 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -170,10 +162,29 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Build jar file" />
     <MESSAGE value="Update code" />
     <option name="LAST_COMMIT_MESSAGE" value="Update code" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1869" height="260" key="GridCell.Tab.0.bottom" timestamp="1606299036132">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606299036132" />
+    <state width="1869" height="260" key="GridCell.Tab.0.center" timestamp="1606299036131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="260" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606299036131" />
+    <state width="1869" height="260" key="GridCell.Tab.0.left" timestamp="1606299036131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="260" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606299036131" />
+    <state width="1869" height="260" key="GridCell.Tab.0.right" timestamp="1606299036132">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1869" height="260" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606299036132" />
   </component>
 </project>
